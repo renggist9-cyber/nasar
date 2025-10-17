@@ -1,22 +1,68 @@
 body {
-  background-color:  #ff0000; /* Warna merah cerah */
-  background-image: url("logo smk.png");
-font-family; Arial, sans-serif; /* jenis huruf yang bersih dan mudah */
-  color: #191970; /* Warna teks utama (biru gelap) */
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
 }
 
+/* Flexbox untuk menengahkan kartu */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Desain kartu */
 .kartu-profil {
-  width: 300px;
-  margin: 50px auto; /* 60px jarak atas/bawah, auto menengahkan kiri/kanan */
-  padding: 20px;
   background-color: white;
-  border-radius: 15px; /* membuat sudut menjadi melengkung */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* efek bayangan */
-  text-align: center; /* Menengahkan semua teks  di dalam kartu */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
 }
-
 
 .kartu-profil img {
-  width: 150px;
-  border-radius; 50%; /* trik membuat gambar persegi menjadi literasi */
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.kartu-profil h1 {
+  margin: 10px 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.kartu-profil p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.kartu-profil a {
+  display: inline-block;
+  margin-bottom: 15px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.kartu-profil a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
