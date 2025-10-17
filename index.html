@@ -11,6 +11,7 @@
       margin: 0;
       padding: 0;
     }
+
     .container {
       max-width: 800px;
       margin: 20px auto;
@@ -18,16 +19,19 @@
       border: 2px solid #004aad;
       background-color: #fffde7;
     }
+
     .header {
       text-align: center;
       margin-bottom: 20px;
     }
+
     .header p {
       border: 1px solid #004aad;
       display: inline-block;
       padding: 5px 10px;
       margin: 0;
     }
+
     .profile-card {
       text-align: center;
       margin-bottom: 30px;
@@ -35,20 +39,32 @@
       border: 1px solid #ddd;
       background-color: #fff;
     }
+
+    /* 🔹 Tambahan untuk logo di tengah */
+    .profile-card img {
+      width: 100px;         /* ukuran logo */
+      height: auto;
+      display: block;
+      margin: 0 auto 10px;  /* posisi tengah dan jarak bawah */
+    }
+
     .profile-card h2 {
       margin: 5px 0;
       color: #004aad;
     }
+
     .profile-card p {
       margin: 5px 0;
       font-size: 14px;
     }
+
     .projects {
       display: flex;
       gap: 20px;
       justify-content: center;
       flex-wrap: wrap;
     }
+
     .project-card {
       width: 200px;
       padding: 10px;
@@ -56,6 +72,7 @@
       background-color: #e0e0f8;
       text-align: center;
     }
+
     .footer {
       margin-top: 30px;
       background-color: #004aad;
@@ -65,6 +82,7 @@
       display: flex;
       justify-content: space-between;
     }
+
     .footer .right {
       background-color: #ffea00;
       color: #000;
@@ -74,23 +92,28 @@
 </head>
 <body>
 
+  <div class="container">
+
     <div class="profile-card">
+      <!-- 🔹 Tambahkan logo di sini -->
+      <img src="logo-smk.png" alt="Logo Sekolah">
       <h2>Nama Lengkap Anda</h2>
       <p>Siswa SMA yang tertarik dengan teknologi dan desain. Selamat datang di website pertama saya!</p>
       <a href="#">Kunjungi Instagram Saya</a>
     </div>
 
-    <h3>Proyek Saya</h3>
+    <h3 style="text-align:center; color:#004aad;">Proyek Saya</h3>
     <div class="projects">
       <div class="project-card">
         <h4>Desain Poster 17-an</h4>
         <p>Membuat desain poster untuk acara kemerdekaan di sekolah menggunakan Canva.</p>
       </div>
       <div class="project-card">
-        <h4>Desain Poster 17-an</h4>
-        <p>Membuat desain poster untuk acara kemerdekaan di sekolah menggunakan Canva.</p>
+        <h4>Desain Web Sekolah</h4>
+        <p>Membuat tampilan sederhana web profil sekolah dengan HTML dan CSS.</p>
       </div>
     </div>
+
   </div>
 
   <div class="footer">
